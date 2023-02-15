@@ -1,0 +1,14 @@
+.button {
+    background: #FAFAFA;
+    border: 1px solid var(--color-light-white);
+    border-radius: 20px;
+    font-family: var(--font-family-primary);
+    font-weight: 600;
+    font-size: var(--font-size-default);
+    flex: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 10px;
+}

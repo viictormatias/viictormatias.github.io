@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="styles/base/reset.css">
+    <link rel="stylesheet" href="styles/base/base.css">
+    <link rel="stylesheet" href="styles/base/variables.css">
+    <link rel="stylesheet" href="styles/layout/header.css">
+    <link rel="stylesheet" href="styles/layout/footer.css">
+    <link rel="stylesheet" href="styles/components/about.css">
+    <link rel="stylesheet" href="styles/components/button.css">
+    <link rel="stylesheet" href="styles/components/projects.css">
+    <link rel="stylesheet" href="styles/components/contact.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d41cb6b5bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <label class="header__toggle" for="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+          <input id="hamburger" class="header__check" type="checkbox">
+          <a href="./index.html">
+            <img class="logo" src="./images/VM.png">
+        </a>
+        <nav class="header__menu">
+            <a href="./index.html" class="header__menu__item">  
+                <span class="header__menu__item__text">Início</span>
+            </a>
+            <a href="./about.html" class="header__menu__item">  
+                <span class="header__menu__item__text">Sobre</span>
+            </a>
+            <a href="./projects.html" class="header__menu__item">  
+                <span class="header__menu__item__text">Projetos</span>
+            </a>
+            <a href="./contact.html" class="header__menu__item header__menu__item--active">  
+                <span class="header__menu__item__text">Contato</span>
+            </a>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <div class="talktome">
+            <h1 class="projects__h1">Fale comigo</h1>
+            <p class="projects__text">Exemplo de formulário caso queira entrar em contato. O formulário abaixo ainda não está em funcionamento.</p>
+            <div class="mailtel">
+                <p class="info">+55 51 98537-0227</p>
+                <p class="info">vmatiasdev@gmail.com</p>
+            </div>
+        </div>
+
+        <form class="form">
+            <div class="campo1">
+                <div class="campo-form">
+                    <label class="form-titles" for="name">Nome</label>
+                    <input class="form-item" type="text" id="name" name="name" placeholder="Seu nome completo">
+                </div>
+                <div class="campo-form">
+                    <label class="form-titles" for="email">E-mail</label>
+                    <input class="form-item" type="email" id="email" name="email" placeholder="Seu e-mail">
+                </div>
+            </div>
+            <div class="campo2">
+                <div class="campo-form">
+                    <label class="form-titles" for="phone">Telefone</label>
+                    <input class="form-item" type="tel" id="phone" name="phone" placeholder="Seu telefone">
+                </div>
+                <div class="campo-form">
+                    <label class="form-titles" for="phone">Assunto</label>
+                    <input class="form-item" type="subject" id="subject" name="subject" placeholder="Sobre o que deseja falar">
+                </div>
+            </div>
+            <div class="message">
+                <label class="form-titles" for="message">Mensagem</label>
+                <textarea class="form-message" id="message" name="message" rows="5"></textarea></div>
+                <div class="button-contact">
+                    <input class="button" type="submit" value="Enviar">
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <section class="footer__contacts">
+        <div class="container__footer">
+            <img class="logo__footer" src="./images/VM.png">
+            <p class="copy__text">©2022 Todos direitos reservados</p>
+            <div class="socialmedia__footer">
+                <a class="icons" href="https://www.instagram.com/viictormatias/" target="_blank">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                </a>
+                <a class="icons" href="https://www.linkedin.com/in/viictormatias/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in fa-2x"></i>
+                </a>
+                <a class="icons" href="https://gitlab.com/vmatiasdev" target="_blank">
+                    <i class="fa-brands fa-gitlab fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
