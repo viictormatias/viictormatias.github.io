@@ -1,146 +1,145 @@
-.about {
-    position: absolute;
-    width: 1000px;
-    margin-top: 150px ;
+.about,
+.about__page,
+.works,
+.studies {
+    max-width: 800px;
+    width: 100%;
+    margin: 40px auto 0 auto;
+    box-sizing: border-box;
 }
+
+.about__page {
+    margin-top: 110px;
+}
+
+.about {
+    margin-top: 110px;
+}
+
 .about__title {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     text-align: center;
-    line-height: 57px;
-    font-size: 44px;
+    line-height: 1.2;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 600;
+    margin: 0 auto 40px auto;
     display: flex;
-    align-items:center;
-    margin-bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
+    justify-content: center;
 }
+
 .picture {
     border-radius: 8px;
     filter: grayscale(1);
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
 }
+
 .about__text {
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom:40px ;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto 40px auto;
     color: var(--color-darken-gray);
-    line-height: 30px;
+    line-height: 1.7;
 }
+
 .pic__desc {
     font-style: italic;
     color: var(--color-light-gray);
     text-align: center;
     margin-top: 5px;
 }
+
 .icons {
     text-decoration: none;
     color: var(--color-lighter-gray);
-    margin: 10px
+    margin: 10px;
 }
+
 .socialmedia {
-    margin-left: 90px;
-    margin-right: 20px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
 }
+
 .container {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
-.about__page {
-    position: absolute;
-    width: 800px;
-    margin-top: 150px ;
-}
-.works {
-    position: absolute;
-    width: 800px;
-    margin-top: 550px ;
-}
-.studies {
-    position: absolute;
-    width: 800px;
-    margin-top: 700px ;
-}
+
 .jobs {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
+
 .company {
     color: var(--color-darken-gray);
     font-weight: 600;
+    width: 100%;
 }
+
 .position {
     color: var(--color-light-gray);
     font-weight: 400;
+    width: 100%;
 }
 
-@media only screen and (max-width:480px) {
-    .about {
-        position: absolute;
-        width: 100%;
-        margin-top: 150px ;
-    }
-    .about__title {
-        width: 100%;
-        text-align: center;
-        line-height: 57px;
-        font-size: 44px;
-        font-style: normal;
-        font-weight: 600;
-        display: flex;
-        align-items:center;
-        margin-bottom: 40px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .picture {
-        border-radius: 8px;
-        filter: grayscale(1);
-        width: 100%;
-    }
-    .socialmedia {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .about__page {
-        position: absolute;
-        width: 100%;
-        margin-top: 150px ;
-    }
+@media only screen and (max-width: 800px) {
+
+    .about,
+    .about__page,
+    .works,
+    .studies,
+    .about__title,
     .about__text {
+        max-width: 95%;
         width: 95%;
-        margin-left: auto;
-        margin-right: auto;
+    }
+
+    .picture {
+        max-width: 450px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .about {
+        padding-top: 40px;
+        margin-top: 40px;
+    }
+
+    .about__title {
+        font-size: 1.7rem;
         margin-top: 20px;
-        margin-bottom:40px ;
-        color: var(--color-darken-gray);
-        line-height: 30px;
+        margin-bottom: 20px;
+        flex-direction: column;
     }
-    .works {
-        position: absolute;
-        width: 95%;
-        margin-top: 900px ;
+
+    .about__text {
+        font-size: 1rem;
+        line-height: 1.5;
     }
-    .studies {
-        position: absolute;
-        width: 95%;
-        margin-top: 1100px ;
+
+    .container {
+        flex-direction: column;
+        align-items: center;
     }
-    .company {
-        width: 100%;
-        color: var(--color-darken-gray);
-        font-weight: 600;
+
+    .jobs {
+        flex-direction: column;
+        align-items: flex-start;
     }
-   .jobs {
-       display: inline-block;
-   }
+
+    .picture {
+        max-width: 140px;
+    }
 }

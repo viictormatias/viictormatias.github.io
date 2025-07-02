@@ -1,13 +1,24 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .talktome {
     width: 800px;
-    margin-top: 156px;
+    margin-top: 110px;
 }
+
 .mailtel {
-    display:flex;
+    display: flex;
     flex-direction: column;
     width: 200px;
     align-items: center;
 }
+
 .info {
     border: 0 none;
     margin: 20px;
@@ -15,92 +26,124 @@
     text-decoration-thickness: 3px;
     text-decoration-color: var(--color-dark-white);
 }
+
 .campo1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
+
 .campo2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
+
 .form {
     margin-top: 60px;
     width: 800px;
 }
+
 .form-item {
-    border: 1px solid  var(--color-light-white);
+    border: 1px solid var(--color-light-white);
     height: 40px;
     border-radius: 4px;
 }
+
 .form-titles {
     font-weight: 600;
     line-height: 19.5px;
     color: var(--color-darken-gray);
     margin-top: 20px;
 }
+
 .form-message {
     width: 800px;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 10px, 11px, 10px, 11px;
-    border: 1px solid  var(--color-light-white);
+    padding: 10px 11px 10px 11px;
+    border: 1px solid var(--color-light-white);
     border-radius: 4px;
 }
+
+.form {
+    max-width: 100%;
+}
+
 .campo-form {
     display: flex;
     flex-direction: column;
     width: 390px;
 }
+
 .message {
     margin-top: 20px;
 }
+
 .button-contact {
     display: flex;
     justify-content: center;
 }
 
-::-webkit-input-placeholder  { color:var(--color-lighter-gray); font-family: var(--font-family-primary);}
-input:-moz-placeholder { color:var(--color-lighter-gray); font-family: var(--font-family-primary); }
-textarea:-moz-placeholder { color:var(--color-lighter-gray); font-family: var(--font-family-primary); }
+::-webkit-input-placeholder {
+    color: var(--color-lighter-gray);
+    font-family: var(--font-family-primary);
+}
+
+input:-moz-placeholder {
+    color: var(--color-lighter-gray);
+    font-family: var(--font-family-primary);
+}
+
+textarea:-moz-placeholder {
+    color: var(--color-lighter-gray);
+    font-family: var(--font-family-primary);
+}
 
 @media only screen and (max-width:480px) {
     .talktome {
         width: 100%;
     }
+
     .contact {
         width: 100%;
     }
+
     .campo-form {
         display: inline-block;
         width: 100%;
     }
+
     .campo1 {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
+
     .campo2 {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
+
     .form {
         width: 100%;
     }
+
     .form-item {
         width: 95%;
         margin-left: 8px;
     }
+
     .button-contact {
         display: flex;
         justify-content: center;
     }
+
     .form-message {
         width: 95%;
         margin-left: 8px;
